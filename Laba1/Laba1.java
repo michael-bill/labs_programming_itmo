@@ -1,3 +1,8 @@
+/*
+    Лабораторная работа N1
+    Вариант 367101
+    Группа P3116 Билошицкий Михаил
+*/
 
 public class Laba1 {
     public static void main(String[] args) {
