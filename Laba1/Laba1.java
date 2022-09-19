@@ -8,18 +8,19 @@ public class Laba1 {
     public static void main(String[] args) {
         short[] p = new short[10];
         short count = 24;
+        double[] x = new double[16];
+        double[][] p2 = new double[10][16];
+        short[] values = new short[] { 6, 16, 18, 20, 22 };
+        
         for (int i = 0; i < p.length; i++) {
             p[i] = count;
             count -= 2;
         }
         
-        double[] x = new double[16];
         for (int i = 0; i < x.length; i++) {
             x[i] = getRandom(-8, 15);
         }
-
-        double[][] p2 = new double[10][16];
-        short[] values = new short[] { 6, 16, 18, 20, 22 };
+        
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 16; j++) {
                 if (p[i] == 24)
@@ -67,6 +68,7 @@ public class Laba1 {
     }
 
     private static double getRandom(int start, int end) {
-        return start + Math.random() * (end - start);
+        double randomValue = start + Math.random() * (end - start);
+        return randomValue;
     }
 }
